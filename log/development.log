@@ -940,3 +940,120 @@ Processing by ChoresController#new as HTML
 Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/chores/new" for ::1 at 2021-02-08 09:59:10 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChoresController#new as HTML
+  Rendering chores/new.html.erb within layouts/application
+  [1m[36mChild Load (0.3ms)[0m  [1m[34mSELECT "children".* FROM "children" WHERE "children"."active" = ? ORDER BY last_name, first_name[0m  [["active", "t"]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."active" = ? ORDER BY name[0m  [["active", "t"]]
+  Rendered chores/_form.html.erb (648.6ms)
+  Rendered chores/new.html.erb within layouts/application (653.4ms)
+Completed 200 OK in 685ms (Views: 663.6ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/chores" for ::1 at 2021-02-08 09:59:43 -0500
+Processing by ChoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Unm3Rq5QqOpcCgNMbD+2V1LsANEHGaXIC1IFDgrTI8LzoUXo7WJL/kjwdWlMgOe2VndZs8WzD/IKrm4YexoguA==", "chore"=>{"child_id"=>"7", "task_id"=>"15", "due_on(2i)"=>"2", "due_on(3i)"=>"8", "due_on(1i)"=>"2021", "completed"=>"1"}, "commit"=>"Create Chore"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "chores" ("child_id", "task_id", "due_on", "completed", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["child_id", 7], ["task_id", 15], ["due_on", "2021-02-08"], ["completed", "t"], ["created_at", "2021-02-08 14:59:43.107444"], ["updated_at", "2021-02-08 14:59:43.107444"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/chores/15
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/chores/15" for ::1 at 2021-02-08 09:59:43 -0500
+Processing by ChoresController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT  "chores".* FROM "chores" WHERE "chores"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering chores/show.html.erb within layouts/application
+  Rendered chores/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/children" for ::1 at 2021-02-08 09:59:45 -0500
+Processing by ChildrenController#index as HTML
+  Rendering children/index.html.erb within layouts/application
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT "children".* FROM "children"[0m
+  [1m[36mChore Load (1.3ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."child_id" = ? AND "chores"."completed" = ?[0m  [["child_id", 7], ["completed", "t"]]
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."child_id" = ? AND "chores"."completed" = ?[0m  [["child_id", 8], ["completed", "t"]]
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."child_id" = ? AND "chores"."completed" = ?[0m  [["child_id", 9], ["completed", "t"]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered children/index.html.erb within layouts/application (62.9ms)
+Completed 200 OK in 76ms (Views: 69.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/chores" for ::1 at 2021-02-08 10:01:40 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.4ms)[0m  [1m[34mSELECT "chores".* FROM "chores" INNER JOIN "tasks" ON "tasks"."id" = "chores"."task_id" ORDER BY due_on ASC, completed, name[0m
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mChild Load (0.1ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendered chores/index.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 61ms (Views: 56.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/chores/new" for ::1 at 2021-02-08 10:01:47 -0500
+Processing by ChoresController#new as HTML
+  Rendering chores/new.html.erb within layouts/application
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT "children".* FROM "children" WHERE "children"."active" = ? ORDER BY last_name, first_name[0m  [["active", "t"]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."active" = ? ORDER BY name[0m  [["active", "t"]]
+  Rendered chores/_form.html.erb (6.8ms)
+  Rendered chores/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/chores" for ::1 at 2021-02-08 10:01:54 -0500
+Processing by ChoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tLeZIKoSwKlZ7SXtb+iOQaf6fvwzDntedHJaxV29E+UVb2uO6SAjvU0XU8hPV9+go2EnnvGk0WR1jjHTLHQQnw==", "chore"=>{"child_id"=>"9", "task_id"=>"11", "due_on(2i)"=>"2", "due_on(3i)"=>"8", "due_on(1i)"=>"2021", "completed"=>"0"}, "commit"=>"Create Chore"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("child_id", "task_id", "due_on", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["child_id", 9], ["task_id", 11], ["due_on", "2021-02-08"], ["created_at", "2021-02-08 15:01:54.193578"], ["updated_at", "2021-02-08 15:01:54.193578"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/chores/16
+Completed 302 Found in 9ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/chores/16" for ::1 at 2021-02-08 10:01:54 -0500
+Processing by ChoresController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT  "chores".* FROM "chores" WHERE "chores"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering chores/show.html.erb within layouts/application
+  [1m[36mChild Load (0.1ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendered chores/show.html.erb within layouts/application (18.7ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.4ms)
+
+
+
+NoMethodError - undefined method `due_onstrftime' for #<Chore:0x00007ff6ffa6f4e8>
+Did you mean?  due_on_was:
+  app/views/chores/show.html.erb:14:in `_app_views_chores_show_html_erb__1812704816467126237_70349413901820'
+
+Started POST "/__better_errors/e014dacd00a4654d/variables" for ::1 at 2021-02-08 10:01:54 -0500
+Started GET "/chores/16" for ::1 at 2021-02-08 10:02:07 -0500
+Processing by ChoresController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT  "chores".* FROM "chores" WHERE "chores"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering chores/show.html.erb within layouts/application
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendered chores/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 0.5ms)
+
+
