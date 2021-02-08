@@ -24,6 +24,14 @@ class ChildTest < ActiveSupport::TestCase
       assert_equal "Mark Heimann", @mark.name
       assert_equal "Rachel Heimann", @rachel.name
     end
+
+    should "have points method that totals chores" do
+      assert_equal 0, @alex.points_earned
+      assert_equal 0, @mark.points_earned
+      assert_equal 0, @rachel.points_earned
+    end
+
+
  
     should "have a scope to alphabetize children" do
       assert_equal ["Alex", "Mark", "Rachel"], Child.alphabetical.map{|c| c.first_name}
