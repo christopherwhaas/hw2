@@ -78,3 +78,865 @@ Migrating to CreateTasks (20140217221809)
   [1m[36mChild Load (0.3ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."active" = ? LIMIT ?[0m  [["active", "t"], ["LIMIT", 11]]
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("due_on", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["due_on", "2021-02-09"], ["created_at", "2021-02-08 14:45:55.900636"], ["updated_at", "2021-02-08 14:45:55.900636"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "chores" ("due_on", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["due_on", "2021-02-09"], ["created_at", "2021-02-08 14:45:55.938191"], ["updated_at", "2021-02-08 14:45:55.938191"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "chores" ("due_on", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["due_on", "2021-02-10"], ["created_at", "2021-02-08 14:45:55.947774"], ["updated_at", "2021-02-08 14:45:55.947774"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "chores" ("due_on", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["due_on", "2021-02-10"], ["created_at", "2021-02-08 14:45:55.961279"], ["updated_at", "2021-02-08 14:45:55.961279"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("due_on", "completed", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["due_on", "2021-02-06"], ["completed", "t"], ["created_at", "2021-02-08 14:45:55.976297"], ["updated_at", "2021-02-08 14:45:55.976297"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "chores" ("due_on", "completed", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["due_on", "2021-02-08"], ["completed", "t"], ["created_at", "2021-02-08 14:45:55.983775"], ["updated_at", "2021-02-08 14:45:55.983775"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("due_on", "completed", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["due_on", "2021-02-08"], ["completed", "t"], ["created_at", "2021-02-08 14:45:55.996551"], ["updated_at", "2021-02-08 14:45:55.996551"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "children" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Alex"], ["last_name", "Heimann"], ["created_at", "2021-02-08 14:46:05.455798"], ["updated_at", "2021-02-08 14:46:05.455798"]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "children" ("first_name", "last_name", "active", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Rachel"], ["last_name", "Heimann"], ["active", "f"], ["created_at", "2021-02-08 14:46:05.471908"], ["updated_at", "2021-02-08 14:46:05.471908"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "children" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Mark"], ["last_name", "Heimann"], ["created_at", "2021-02-08 14:46:05.481775"], ["updated_at", "2021-02-08 14:46:05.481775"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wash dishes"], ["points", 1], ["created_at", "2021-02-08 14:46:10.448917"], ["updated_at", "2021-02-08 14:46:10.448917"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "active", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stack wood"], ["points", 1], ["active", "f"], ["created_at", "2021-02-08 14:46:10.458373"], ["updated_at", "2021-02-08 14:46:10.458373"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sweep floor"], ["points", 1], ["created_at", "2021-02-08 14:46:10.468474"], ["updated_at", "2021-02-08 14:46:10.468474"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Shovel driveway"], ["points", 3], ["created_at", "2021-02-08 14:46:10.472637"], ["updated_at", "2021-02-08 14:46:10.472637"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mow grass"], ["points", 2], ["created_at", "2021-02-08 14:46:10.476845"], ["updated_at", "2021-02-08 14:46:10.476845"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mChild Load (0.4ms)[0m  [1m[34mSELECT "children".* FROM "children"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "children" WHERE "children"."id" = ?[0m  [["id", 1]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "children" WHERE "children"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "children" WHERE "children"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "children" WHERE "children"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "children" WHERE "children"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "children" WHERE "children"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 9]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 10]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "children" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Alex"], ["last_name", "Heimann"], ["created_at", "2021-02-08 14:46:54.821187"], ["updated_at", "2021-02-08 14:46:54.821187"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "children" ("first_name", "last_name", "active", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Rachel"], ["last_name", "Heimann"], ["active", "f"], ["created_at", "2021-02-08 14:46:54.831170"], ["updated_at", "2021-02-08 14:46:54.831170"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "children" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Mark"], ["last_name", "Heimann"], ["created_at", "2021-02-08 14:46:54.835729"], ["updated_at", "2021-02-08 14:46:54.835729"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wash dishes"], ["points", 1], ["created_at", "2021-02-08 14:46:57.300081"], ["updated_at", "2021-02-08 14:46:57.300081"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "active", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stack wood"], ["points", 1], ["active", "f"], ["created_at", "2021-02-08 14:46:57.310024"], ["updated_at", "2021-02-08 14:46:57.310024"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sweep floor"], ["points", 1], ["created_at", "2021-02-08 14:46:57.315073"], ["updated_at", "2021-02-08 14:46:57.315073"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Shovel driveway"], ["points", 3], ["created_at", "2021-02-08 14:46:57.323040"], ["updated_at", "2021-02-08 14:46:57.323040"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mow grass"], ["points", 2], ["created_at", "2021-02-08 14:46:57.328145"], ["updated_at", "2021-02-08 14:46:57.328145"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2021-02-08 09:47:28 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.3ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 845ms (ActiveRecord: 1.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2407338066249692759_70205147249560'
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2021-02-08 09:47:29 -0500
+Started POST "/__better_errors/612d7e409921de26/variables" for ::1 at 2021-02-08 09:47:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+rack-contrib (2.3.0) lib/rack/contrib/response_headers.rb:19:in `call'
+meta_request (0.5.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/apple-touch-icon.png" for ::1 at 2021-02-08 09:47:30 -0500
+Started GET "/apple-touch-icon.png" for ::1 at 2021-02-08 09:47:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+rack-contrib (2.3.0) lib/rack/contrib/response_headers.rb:19:in `call'
+meta_request (0.5.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+rack-contrib (2.3.0) lib/rack/contrib/response_headers.rb:19:in `call'
+meta_request (0.5.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-02-08 09:48:14 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.3ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2407338066249692759_70205123514460'
+
+Started POST "/__better_errors/af0b4c35c70247cd/variables" for ::1 at 2021-02-08 09:48:14 -0500
+Started GET "/" for ::1 at 2021-02-08 09:48:22 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.2ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2407338066249692759_70205159869480'
+
+Started POST "/__better_errors/b7485ebb3c302b99/variables" for ::1 at 2021-02-08 09:48:22 -0500
+Started GET "/" for ::1 at 2021-02-08 09:48:42 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.2ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2407338066249692759_70205173101100'
+
+Started POST "/__better_errors/9824fd50f824b6b7/variables" for ::1 at 2021-02-08 09:48:42 -0500
+Started GET "/" for ::1 at 2021-02-08 09:49:12 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (1.7ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 1.7ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2407338066249692759_70205170741060'
+
+Started POST "/__better_errors/e60c2c02e9eccc8d/variables" for ::1 at 2021-02-08 09:49:12 -0500
+Started GET "/home" for ::1 at 2021-02-08 09:49:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+rack-contrib (2.3.0) lib/rack/contrib/response_headers.rb:19:in `call'
+meta_request (0.5.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home" for ::1 at 2021-02-08 09:49:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+rack-contrib (2.3.0) lib/rack/contrib/response_headers.rb:19:in `call'
+meta_request (0.5.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-02-08 09:49:17 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.2ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2407338066249692759_70205161718160'
+
+Started POST "/__better_errors/fa97fda8f874e3c5/variables" for ::1 at 2021-02-08 09:49:17 -0500
+Started GET "/chores" for ::1 at 2021-02-08 09:49:19 -0500
+Started GET "/chores" for ::1 at 2021-02-08 09:49:19 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (2.8ms)
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.2ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2407338066249692759_70205220908840'
+
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.3ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2407338066249692759_70205220908840'
+
+Started POST "/__better_errors/5717b12427a07365/variables" for ::1 at 2021-02-08 09:49:19 -0500
+Started GET "/chores" for ::1 at 2021-02-08 09:49:24 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.2ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2407338066249692759_70205111293200'
+
+Started POST "/__better_errors/ca6eefa5dad4c6c8/variables" for ::1 at 2021-02-08 09:49:24 -0500
+Started GET "/" for ::1 at 2021-02-08 09:49:24 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (1.4ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 1.4ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/images
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/app/assets/stylesheets
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/javascripts
+  /Users/chrishaas/Desktop/School/5thSpring2021/67373 IS Consulting/hw2/vendor/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/best_in_place-3.0.3/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/vuejs-rails-2.5.13/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-sass-0.100.2/app/assets/images
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/stylesheets
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/javascripts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/fonts
+  /Users/chrishaas/.rvm/gems/ruby-2.5.7/gems/materialize-form-1.0.8/app/assets/images:
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2407338066249692759_70205115935000'
+
+Started POST "/__better_errors/a9d629cebc55254e/variables" for ::1 at 2021-02-08 09:49:25 -0500
+Started GET "/" for ::1 at 2021-02-08 09:50:00 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.4ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/children" for ::1 at 2021-02-08 09:50:03 -0500
+Processing by ChildrenController#index as HTML
+  Rendering children/index.html.erb within layouts/application
+  [1m[36mChild Load (0.4ms)[0m  [1m[34mSELECT "children".* FROM "children"[0m
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."child_id" = ? AND "chores"."completed" = ?[0m  [["child_id", 7], ["completed", "t"]]
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."child_id" = ? AND "chores"."completed" = ?[0m  [["child_id", 8], ["completed", "t"]]
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."child_id" = ? AND "chores"."completed" = ?[0m  [["child_id", 9], ["completed", "t"]]
+  Rendered children/index.html.erb within layouts/application (51.5ms)
+Completed 200 OK in 76ms (Views: 57.0ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/chores" for ::1 at 2021-02-08 09:50:04 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.4ms)[0m  [1m[34mSELECT "chores".* FROM "chores"[0m
+  Rendered chores/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2021-02-08 09:50:06 -0500
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 29ms (Views: 19.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/chores" for ::1 at 2021-02-08 09:51:16 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.1ms)[0m  [1m[34mSELECT "chores".* FROM "chores" INNER JOIN "tasks" ON "tasks"."id" = "chores"."task_id" ORDER BY due_on ASC, completed, name[0m
+  Rendered chores/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 42ms (Views: 33.4ms | ActiveRecord: 1.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "chores" ("child_id", "task_id", "due_on", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["child_id", 7], ["task_id", 11], ["due_on", "2021-02-09"], ["created_at", "2021-02-08 14:51:33.619526"], ["updated_at", "2021-02-08 14:51:33.619526"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("child_id", "task_id", "due_on", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["child_id", 9], ["task_id", 13], ["due_on", "2021-02-09"], ["created_at", "2021-02-08 14:51:33.627319"], ["updated_at", "2021-02-08 14:51:33.627319"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("child_id", "task_id", "due_on", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["child_id", 7], ["task_id", 13], ["due_on", "2021-02-10"], ["created_at", "2021-02-08 14:51:33.632864"], ["updated_at", "2021-02-08 14:51:33.632864"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("child_id", "task_id", "due_on", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["child_id", 9], ["task_id", 11], ["due_on", "2021-02-10"], ["created_at", "2021-02-08 14:51:33.645923"], ["updated_at", "2021-02-08 14:51:33.645923"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("child_id", "task_id", "due_on", "completed", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["child_id", 7], ["task_id", 14], ["due_on", "2021-02-06"], ["completed", "t"], ["created_at", "2021-02-08 14:51:33.652646"], ["updated_at", "2021-02-08 14:51:33.652646"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("child_id", "task_id", "due_on", "completed", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["child_id", 7], ["task_id", 11], ["due_on", "2021-02-08"], ["completed", "t"], ["created_at", "2021-02-08 14:51:33.663185"], ["updated_at", "2021-02-08 14:51:33.663185"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "chores" ("child_id", "task_id", "due_on", "completed", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["child_id", 9], ["task_id", 13], ["due_on", "2021-02-08"], ["completed", "t"], ["created_at", "2021-02-08 14:51:33.667311"], ["updated_at", "2021-02-08 14:51:33.667311"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/chores" for ::1 at 2021-02-08 09:51:37 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" INNER JOIN "tasks" ON "tasks"."id" = "chores"."task_id" ORDER BY due_on ASC, completed, name[0m
+  Rendered chores/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/chores" for ::1 at 2021-02-08 09:52:26 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" INNER JOIN "tasks" ON "tasks"."id" = "chores"."task_id" ORDER BY due_on ASC, completed, name[0m
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendered chores/index.html.erb within layouts/application (38.7ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 1.6ms)
+
+
+
+NoMethodError - undefined method `strftime' for true:TrueClass:
+  app/views/chores/index.html.erb:17:in `block in _app_views_chores_index_html_erb__4293397185911171608_70205173089700'
+  app/views/chores/index.html.erb:12:in `_app_views_chores_index_html_erb__4293397185911171608_70205173089700'
+
+Started POST "/__better_errors/4d3cbc826d9f0517/variables" for ::1 at 2021-02-08 09:52:26 -0500
+Started GET "/chores" for ::1 at 2021-02-08 09:52:43 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.3ms)[0m  [1m[34mSELECT "chores".* FROM "chores" INNER JOIN "tasks" ON "tasks"."id" = "chores"."task_id" ORDER BY due_on ASC, completed, name[0m
+  [1m[36mChild Load (0.9ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mChild Load (0.3ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendered chores/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/children" for ::1 at 2021-02-08 09:53:57 -0500
+Processing by ChildrenController#index as HTML
+  Rendering children/index.html.erb within layouts/application
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT "children".* FROM "children"[0m
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."child_id" = ? AND "chores"."completed" = ?[0m  [["child_id", 7], ["completed", "t"]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."child_id" = ? AND "chores"."completed" = ?[0m  [["child_id", 8], ["completed", "t"]]
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" WHERE "chores"."child_id" = ? AND "chores"."completed" = ?[0m  [["child_id", 9], ["completed", "t"]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendered children/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/chores" for ::1 at 2021-02-08 09:54:01 -0500
+Processing by ChoresController#index as HTML
+  Rendering chores/index.html.erb within layouts/application
+  [1m[36mChore Load (0.2ms)[0m  [1m[34mSELECT "chores".* FROM "chores" INNER JOIN "tasks" ON "tasks"."id" = "chores"."task_id" ORDER BY due_on ASC, completed, name[0m
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mCACHE Child Load (0.0ms)[0m  [1m[34mSELECT  "children".* FROM "children" WHERE "children"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE Task Load (0.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendered chores/index.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 49ms (Views: 44.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/chores/new" for ::1 at 2021-02-08 09:54:02 -0500
+Processing by ChoresController#new as HTML
+  Rendering chores/new.html.erb within layouts/application
+  Rendered chores/_form.html.erb (686.2ms)
+  Rendered chores/new.html.erb within layouts/application (692.2ms)
+Completed 200 OK in 710ms (Views: 701.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chores/new" for ::1 at 2021-02-08 09:54:49 -0500
+Processing by ChoresController#new as HTML
+  Rendering chores/new.html.erb within layouts/application
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT "children".* FROM "children" WHERE "children"."active" = ? ORDER BY last_name, first_name[0m  [["active", "t"]]
+  Rendered chores/_form.html.erb (12.8ms)
+  Rendered chores/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/chores/new" for ::1 at 2021-02-08 09:55:49 -0500
+Processing by ChoresController#new as HTML
+  Rendering chores/new.html.erb within layouts/application
+  [1m[36mChild Load (0.2ms)[0m  [1m[34mSELECT "children".* FROM "children" WHERE "children"."active" = ? ORDER BY last_name, first_name[0m  [["active", "t"]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."active" = ? ORDER BY name[0m  [["active", "t"]]
+  Rendered chores/_form.html.erb (7.5ms)
+  Rendered chores/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.4ms)
+
+
